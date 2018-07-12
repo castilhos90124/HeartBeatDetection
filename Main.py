@@ -7,15 +7,37 @@ from Data import Data
 import time
 import os
 
+
+
    
 def main():
    
-   print("Insira o nome do ""paciente"":")
-   name = input()
+   
+   name = input("Insira o nome do paciente:")
+   print("")
    
    data = Data(name)
    
-   print(data.subject_name)
+   step1 = CondicaoMotoraS1()
+   step2 = PreInteroceptivaS2()
+   step3 = FeedbackS3()
+   step4 = PosInteroceptivaS4()
+   
+   #inicio da etapa 1
+   step1.print_instructions()
+   step1.play_sound()
+   step1.get_responses(10)
+   
+   print(step1.hb_pressed_times)
+   
+   os.system("cls")
+   
+   
+   
+  
+   
+   
+   
        
        
        
