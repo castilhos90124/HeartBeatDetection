@@ -7,9 +7,9 @@ from Data import Data
 import os
 
 DURATION_STEP1 = 15
-DURATION_STEP2 = 15
-DURATION_STEP3 = 15
-DURATION_STEP4 = 15
+DURATION_STEP2 = 2
+DURATION_STEP3 = 2
+DURATION_STEP4 = 2
 
    
 def main():
@@ -31,25 +31,16 @@ def main():
    step1.set_current_start_time()
    step1.play_sound()
    step1.get_responses(DURATION_STEP1)
-   
-   step2.hb_pressed_times.append(1.1)
+     
    print(step1.hb_pressed_times)
-   print("")
    
-   print(step2.hb_pressed_times)
-   print("")
-   print(step3.hb_pressed_times)
-   print("")
-   print(step4.hb_pressed_times)
-   
-   
-   '''
+     
   # os.system("pause")
    #os.system("CLS")
    
    #inicio da etapa 2
    step2.print_instructions_general()
-   step2.print_instructions
+   step2.print_instructions()
    step2.set_current_start_time()
    step2.get_responses(DURATION_STEP2)
    print(step2.hb_pressed_times)
@@ -76,7 +67,7 @@ def main():
    data.write_data()
    
    
-   '''
+   
        
      
 

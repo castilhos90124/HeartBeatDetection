@@ -4,7 +4,7 @@ import time
 #classe mãe de cada uma das etapas, contém os métodos comuns
 class HB_Detection(object):
         
-    hb_pressed_times = []
+    
     start_time= 0.0
     
     #def __init__(self):

@@ -3,6 +3,8 @@ from HB_Detection import HB_Detection
 
 class FeedbackS3(HB_Detection):
     
+    hb_pressed_times = []
+    
     def __init__(self):
          super().__init__()     #chama o construtor da classe mãe (HB_Detection)
     
