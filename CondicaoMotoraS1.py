@@ -1,12 +1,13 @@
 from HB_Detection import HB_Detection
 
 import time
+import winsound
 
 DELAY_SECONDS = 1
+SOUND_NAME = "teste"
+
 
 class CondicaoMotoraS1(HB_Detection):
-    
-    
     
     
     def __init__(self):
@@ -21,4 +22,5 @@ class CondicaoMotoraS1(HB_Detection):
     
     def play_sound(self):
         self.start_time = time.time()
-        print("inicio do som tocando")
+        winsound.PlaySound(SOUND_NAME, winsound.SND_ASYNC)
+        
