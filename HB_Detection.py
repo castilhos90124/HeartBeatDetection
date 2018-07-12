@@ -1,14 +1,17 @@
 
+
 #classe mãe de cada uma das etapas, contém os métodos comuns
 class HB_Detection(object):
-    
-    KB_KEY = 10
-    
+        
     hb_pressed_times = []
     
+    #def __init__(self):
+         #apenas constroi o objeto, sem alterar nenhuma variavel
+         
+        
     def write_detection(self,elapsed_time):
         
-        hb_pressed_times.append(elapsed_time)
+        self.hb_pressed_times.append(elapsed_time)
                 
     
     
