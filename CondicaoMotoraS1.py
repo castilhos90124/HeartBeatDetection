@@ -15,9 +15,11 @@ class CondicaoMotoraS1(HB_Detection):
         
     
     def print_instructions(self):
-        print("Instrucoes Etapa 1:")
-        print("bla bla bla")
-        input("pressione Enter para iniciar a Etapa 1")
+        print("Instrucoes Etapa 1: Motor Control Condition")
+        print("Nesta parte do teste, você vai escutar os batimentos de uma gravação de batimentos cardíacos de uma outra pessoa.")
+        print("Você deve seguir cada batimento apertando a tecla Enter no teclado.") 
+        print("Não tente antecipar suas respostas adivinhando o ritmo dos batimentos gravados, ao invés disso aperte a tecla Enter o mais rápido que puder assim que você escutar cada batimento.\n")
+        input("Pressione Enter se voce compreendeu as instrucoes e esta pronto para iniciar a Etapa 1")
         time.sleep(DELAY_SECONDS)
     
     def play_sound(self):

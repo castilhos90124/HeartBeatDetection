@@ -40,5 +40,11 @@ class HB_Detection(object):
             return False
         
         return True
+    
+    def print_instructions_general(self):
+        print("Instruções para as três condições seguintes [interoceptive condition (intero-pre), feedback condition and second interoceptive condition (intero-post)]:")
+        print("Agora você deve seguir os batimentos do seu próprio coração apertando a tecla Enter para cada batimento que você sentir.") 
+        print("Você não deve guiar suas respostas sentindo seu pulso em seus punhos ou pescoço.")
+        print("Se você não conseguir sentir a sensação dos seus batimentos, você deve apelar para a sua intuição para tentar responder quando você achar que houve batimento do seu coração.")
         
     

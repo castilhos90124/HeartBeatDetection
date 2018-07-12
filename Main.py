@@ -17,6 +17,9 @@ def main():
    print("")
    
    data = Data(name)
+  
+   
+   
    
    step1 = CondicaoMotoraS1()
    step2 = PreInteroceptivaS2()
@@ -27,15 +30,21 @@ def main():
    step1.print_instructions()
    step1.play_sound()
    step1.get_responses(DURATION_STEP1)
-   
-   data.wri
-   
    print(step1.hb_pressed_times)
    
+   os.system("pause")
+   os.system("CLS")
+   
+   step2.print_instructions_general()
+   
+   data.write_data()
    
    
-   os.system("cls")
    
+   
+   
+   
+  
    
    
   

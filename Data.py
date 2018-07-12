@@ -8,7 +8,7 @@ class Data(object):
     
     def __init__(self,subject_name):
         self.subject_name = subject_name
-        self.filename = self.subject_name +"_HB_pressed_times" + ".csv" 
+        self.filename = self.clear_string(self.subject_name) +"_HB_pressed_times" + ".csv" 
         
     def write_data(self):
         try:
@@ -18,4 +18,9 @@ class Data(object):
             os.mkdir("Resultados")
             self.file = open("Resultados/" + self.filename, "w")
             
-    
+    def clear_string(self,string):
+        clean = string.replace(" ","")
+        clean = clean.replace("\t","")
+        clean = clean.replace("\n","")
+
+        return clean

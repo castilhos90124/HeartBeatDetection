@@ -7,6 +7,6 @@ class PosInteroceptivaS4(HB_Detection):
          super().__init__()     #chama o construtor da classe mãe (HB_Detection)
     
     def print_instructions(self):
-        print("Instrucoes Etapa 4:")
-        print("bla bla bla")
+        print("Etapa 4: Second Interoceptive Condition (Intero-Post)")
+        input("Pressione Enter se voce compreendeu as instrucoes e esta pronto(a) para iniciar a Etapa 3")
     

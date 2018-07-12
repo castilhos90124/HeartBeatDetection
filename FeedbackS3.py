@@ -7,7 +7,8 @@ class FeedbackS3(HB_Detection):
          super().__init__()     #chama o construtor da classe mãe (HB_Detection)
     
     def print_instructions(self):
-        print("Instrucoes Etapa 3:")
-        print("bla bla bla")
+        print("Etapa 3: Feedback Condition")
+        print("Nao se esqueca de posicionar o estetoscopio corretamente")
+        input("Pressione Enter se voce compreendeu as instrucoes e esta pronto(a) para iniciar a Etapa 3")
 
     
