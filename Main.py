@@ -7,7 +7,7 @@ from Data import Data
 import time
 import os
 
-
+DURATION_STEP1 = 10
 
    
 def main():
@@ -26,9 +26,11 @@ def main():
    #inicio da etapa 1
    step1.print_instructions()
    step1.play_sound()
-   step1.get_responses(10)
+   step1.get_responses(DURATION_STEP1)
    
    print(step1.hb_pressed_times)
+   
+   
    
    os.system("cls")
    
