@@ -35,8 +35,8 @@ def main():
    print(step1.hb_pressed_times)
    
      
-  # os.system("pause")
-   #os.system("CLS")
+   os.system("PAUSE")
+   os.system("CLS")
    
    #inicio da etapa 2
    step2.print_instructions_general()
@@ -45,8 +45,8 @@ def main():
    step2.get_responses(DURATION_STEP2)
    print(step2.hb_pressed_times)
    
-  # os.system("pause")
-   #os.system("CLS")
+   os.system("pause")
+   os.system("CLS")
    
    #inicio da etapa 3
    step3.print_instructions()
@@ -54,8 +54,8 @@ def main():
    step3.get_responses(DURATION_STEP3)
    print(step3.hb_pressed_times)
    
-   #os.system("pause")
-   #os.system("CLS")
+   os.system("pause")
+   os.system("CLS")
    
     #inicio da etapa 4
    step4.print_instructions()
