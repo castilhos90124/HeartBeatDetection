@@ -23,6 +23,5 @@ class CondicaoMotoraS1(HB_Detection):
         time.sleep(DELAY_SECONDS)
     
     def play_sound(self):
-        self.start_time = time.time()
         winsound.PlaySound(SOUND_NAME, winsound.SND_ASYNC)
         

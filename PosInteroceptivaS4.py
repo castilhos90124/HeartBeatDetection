@@ -8,5 +8,5 @@ class PosInteroceptivaS4(HB_Detection):
     
     def print_instructions(self):
         print("Etapa 4: Second Interoceptive Condition (Intero-Post)")
-        input("Pressione Enter se voce compreendeu as instrucoes e esta pronto(a) para iniciar a Etapa 3")
+        input("Pressione Enter se voce compreendeu as instrucoes e esta pronto(a) para iniciar a Etapa 4")
     

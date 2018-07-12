@@ -47,4 +47,5 @@ class HB_Detection(object):
         print("Você não deve guiar suas respostas sentindo seu pulso em seus punhos ou pescoço.")
         print("Se você não conseguir sentir a sensação dos seus batimentos, você deve apelar para a sua intuição para tentar responder quando você achar que houve batimento do seu coração.")
         
-    
+    def set_current_start_time(self):
+        self.start_time = time.time()
