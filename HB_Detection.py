@@ -12,7 +12,7 @@ class HB_Detection(object):
          
     def get_responses(self,duration_seconds):
         
-        i = 1
+        i = 0
         write_time = 0.0
         
         print("Pressione Enter quando ouvir um batimento cardíaco")
