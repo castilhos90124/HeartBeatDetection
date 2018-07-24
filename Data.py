@@ -58,7 +58,9 @@ class Data(object):
     def write_data(self,hb_pressed_times):
         i = 0
         while(i < len(hb_pressed_times)):
-            self.file.write(str(hb_pressed_times[i]))
+            txt_dot_number = str(round(hb_pressed_times[i],3))
+            txt_coma_number = self.dot_to_coma(txt_dot_number)
+            self.file.write(txt_coma_number)
             self.file.write(";")
             i+=1
         
@@ -81,6 +83,11 @@ class Data(object):
         self.new_line()
         self.file.write("Hora:;" + self.hour + ";")
         self.new_line()
+        
+    def dot_to_coma(self,string):
+        replaced = string.replace(".",",")
+        return replaced
+        
     
     
         

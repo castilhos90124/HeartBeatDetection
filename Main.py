@@ -17,7 +17,8 @@ def main():
     name = input("Nome do participante:")
     data = Data(name)
     
-    print(str(1532368217.1612382))
+    #print(str(1532368217.1612382))
+    #print(round(1532368217.1612382, 3))
     
     #instanciando os objetos das etapas
     step1 = CondicaoMotoraS1()
