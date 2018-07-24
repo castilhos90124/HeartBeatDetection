@@ -2,7 +2,10 @@
 
 import os
 
+PRECISION = 3
+
 class Data(object):
+    
     
     subject_name = ""
     filename= ""
@@ -11,10 +14,17 @@ class Data(object):
     hour= ""
     
     def __init__(self,subject_name):
-        self.subject_name = subject_name
-        self.filename = self.clear_string(self.subject_name) +"_HB_pressed_times" + ".csv" 
+        #reinicializa variaveis
+        self.subject_name = ""
+        self.filename= ""
+        self.file = None
+        self.day = ""
+        self.hour= ""
         
-    def write_data_csv(self,step1_pressed_times):#,step2_pressed_times,step3_pressed_times,step4_pressed_times):
+        self.subject_name = subject_name
+        self.filename = self.clear_string(self.subject_name) +"_HB" + ".csv" 
+        
+    def write_data_csv(self,step1_pressed_times,step1_play_times,step2_pressed_times,step3_pressed_times,step4_pressed_times):
         try:
             self.file = open("Resultados/" + self.filename, "w")
            
@@ -34,9 +44,10 @@ class Data(object):
         self.write_data(step1_pressed_times)
         self.new_line()
         
-        self.file.write("TR:;")
+        self.file.write("RT_audio_onset:;")
+        self.write_data(step1_play_times)
         self.new_line()
-        
+                       
         self.file.write("Acerto:;")
         self.new_line()
         
@@ -45,20 +56,50 @@ class Data(object):
         self.file.write("Etapa 2: Condição Interoceptiva (Pré);")
         self.new_line()
         
+        self.file.write("Resposta:;")
+        self.write_data(step2_pressed_times)
+        self.new_line()
+        
+        self.file.write("RT_pre:;")
+        self.new_line()
+        
+        self.file.write("Acerto:;")
+        self.new_line()
+        
         #etapa3
         self.new_line()
         self.file.write("Etapa 3: Condição de Feedback (Estetoscópio);")
+        self.new_line()
+        
+        self.file.write("Resposta:;")
+        self.write_data(step3_pressed_times)
+        self.new_line()
+        
+        self.file.write("RT_feedback:;")
+        self.new_line()
+        
+        self.file.write("Acerto:;")
         self.new_line()
         
         #etapa4
         self.new_line()
         self.file.write("Etapa 4: Condição Interoceptiva (Pós);")
         self.new_line()
+        
+        self.file.write("Resposta:;")
+        self.write_data(step4_pressed_times)
+        self.new_line()
+        
+        self.file.write("RT_post:;")
+        self.new_line()
+        
+        self.file.write("Acerto:;")
+        self.new_line()
     
-    def write_data(self,hb_pressed_times):
+    def write_data(self,data_array):
         i = 0
-        while(i < len(hb_pressed_times)):
-            txt_dot_number = str(round(hb_pressed_times[i],3))
+        while(i < len(data_array)):
+            txt_dot_number = str(round(data_array[i],PRECISION))
             txt_coma_number = self.dot_to_coma(txt_dot_number)
             self.file.write(txt_coma_number)
             self.file.write(";")

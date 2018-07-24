@@ -1,0 +1,23 @@
+Participante:;ander2;
+Dia:;2;
+Hora:;2;
+
+Etapa 1: Condição Motora;
+Resposta:;1532446176,017;1532446176,898;1532446178,518;1532446180,459;1532446189,447;
+RT_audio_onset:;0,686;1,567;3,187;5,128;14,116;
+Acerto:;
+
+Etapa 2: Condição Interoceptiva (Pré);
+Resposta:;1532446195,032;1532446195,547;
+RT_pre:;
+Acerto:;
+
+Etapa 3: Condição de Feedback (Estetoscópio);
+Resposta:;1532446201,393;
+RT_feedback:;
+Acerto:;
+
+Etapa 4: Condição Interoceptiva (Pós);
+Resposta:;1532446205,549;1532446206,049;
+RT_post:;
+Acerto:;

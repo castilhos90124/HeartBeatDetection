@@ -13,23 +13,27 @@ class HB_Detection(object):
     def get_responses(self,duration_seconds):
         
         i = 0
-        write_time = 0.0
+        unix_time = 0.0
         
         print("Pressione Enter quando ouvir um batimento cardíaco")
         
         while self.timeout(duration_seconds) == False:
             input(i)
-            write_time = time.time()
+            unix_time = time.time()
+            play_time = unix_time - self.start_time
+            
             
             if self.timeout(duration_seconds) == False:
-                self.write_detection(write_time)
+                self.write_detection(unix_time,play_time)
+                
                 i+=1
         
         
         
-    def write_detection(self,unix_time):
+    def write_detection(self,unix_time,play_time):
         
         self.hb_pressed_times.append(unix_time)
+        self.hb_play_times.append(play_time)
                 
     
     def timeout(self,duration_seconds):
