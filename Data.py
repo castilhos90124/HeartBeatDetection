@@ -22,7 +22,7 @@ class Data(object):
         self.hour= ""
         
         self.subject_name = subject_name
-        self.filename = self.clear_string(self.subject_name) +"_HB" + ".csv" 
+        self.filename = self.clear_string(self.subject_name) + "_HB" + ".csv" 
         
     def write_data_csv(self,step1_pressed_times,step1_play_times,step2_pressed_times,step3_pressed_times,step4_pressed_times):
         try:
@@ -95,6 +95,8 @@ class Data(object):
         
         self.file.write("Acerto:;")
         self.new_line()
+        
+        self.file.close()
     
     def write_data(self,data_array):
         i = 0
