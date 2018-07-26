@@ -5,6 +5,7 @@ from PosInteroceptivaS4 import PosInteroceptivaS4
 from Data import Data
 
 import os
+import time
 
 DURATION_STEP1 = 15
 DURATION_STEP2 = 2
@@ -32,6 +33,8 @@ def main():
         step3 = FeedbackS3()
         step4 = PosInteroceptivaS4()
         
+        
+        
        
         data.day=input("Dia:")
         data.hour=input("Horario:")
@@ -41,12 +44,11 @@ def main():
         step1.print_instructions()
         step1.set_current_start_time()
         step1.play_sound()
+      
         step1.get_responses(DURATION_STEP1)
      
-        #print(step1.hb_pressed_times)
-       # print(step1.hb_play_times)
-       
-        
+              
+        '''
         os.system("PAUSE")
         os.system("CLS")
        
@@ -75,7 +77,7 @@ def main():
         step4.get_responses(DURATION_STEP4)
        # print(step4.hb_pressed_times)
        
-        
+        '''
         data.write_data_csv(step1.hb_pressed_times,step1.hb_play_times,step2.hb_pressed_times,step3.hb_pressed_times,step4.hb_pressed_times)
          
         os.system("CLS")

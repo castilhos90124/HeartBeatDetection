@@ -36,6 +36,7 @@ class Data(object):
         self.write_time_info()
         
         #etapa1
+        
         self.new_line()
         self.file.write("Etapa 1: Condição Motora;")
         self.new_line()
@@ -45,6 +46,8 @@ class Data(object):
         self.new_line()
         
         self.file.write("RT_audio_onset:;")
+        self.s_to_ms(step1_play_times)
+        self.float_to_int(step1_play_times)
         self.write_data(step1_play_times)
         self.new_line()
                        
@@ -106,7 +109,21 @@ class Data(object):
             self.file.write(txt_coma_number)
             self.file.write(";")
             i+=1
-        
+    
+    def s_to_ms(self,data_array):
+        i = 0
+        while(i < len(data_array)):
+            data_array[i] = data_array[i] * 1000
+            
+            i+=1
+    
+    def float_to_int(self,data_array):
+        i = 0
+        while(i < len(data_array)):
+            data_array[i] = int(data_array[i])
+            
+            i+=1
+    
     def clear_string(self,string):
         clean = string.replace(" ","")
         clean = clean.replace("\t","")

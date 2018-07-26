@@ -27,7 +27,7 @@ class CondicaoMotoraS1(HB_Detection):
         print("Você deve seguir cada batimento apertando a tecla Enter no teclado.") 
         print("Não tente antecipar suas respostas adivinhando o ritmo dos batimentos gravados, ao invés disso aperte a tecla Enter o mais rápido que puder assim que você escutar cada batimento.\n")
         input("Pressione Enter se voce compreendeu as instrucoes e esta pronto para iniciar a Etapa 1")
-        time.sleep(DELAY_SECONDS)
+        #time.sleep(DELAY_SECONDS)
     
     def play_sound(self):
         winsound.PlaySound(SOUND_NAME, winsound.SND_ASYNC)
