@@ -1,0 +1,23 @@
+Participante:;teste audio ecg;
+Dia:;s;
+Hora:;s;
+
+Etapa 1: Condição Motora;
+Resposta:;1532601245,285;1532601246,315;1532601247,375;1532601251,455;1532601252,714;1532601253,755;1532601254,905;1532601256,085;1532601257,324;1532601258,299;
+RT_audio_onset:;1465;2496;3556;7635;8895;9935;11085;12266;13505;14480;
+Acerto:;
+
+Etapa 2: Condição Interoceptiva (Pré);
+Resposta:;1532601277,415;1532601277,875;
+RT_pre:;
+Acerto:;
+
+Etapa 3: Condição de Feedback (Estetoscópio);
+Resposta:;1532601282,535;
+RT_feedback:;
+Acerto:;
+
+Etapa 4: Condição Interoceptiva (Pós);
+Resposta:;1532601290,615;1532601291,015;1532601291,844;
+RT_post:;
+Acerto:;

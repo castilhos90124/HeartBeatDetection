@@ -4,7 +4,7 @@ import time
 import winsound
 
 DELAY_SECONDS = 1
-SOUND_NAME = "teste"
+SOUND_NAME = "sampleecg"
 
 
 class CondicaoMotoraS1(HB_Detection):
