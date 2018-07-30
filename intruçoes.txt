@@ -1,0 +1,9 @@
+1- Abra o Main.py
+2- Maximize a tela
+
+3- Configure a fonte para tamanho 36:
+3.1- Aperte botao direito na janela
+3.2- Selecione Propriedades
+3.3- Vá na aba Fonte e selecione o tamanho para 36
+
+4-Pronto, enjoy :)

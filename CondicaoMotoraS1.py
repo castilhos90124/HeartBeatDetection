@@ -6,15 +6,15 @@ import winsound
 DELAY_SECONDS = 1
 SOUND_NAME = "sampleecg"
 
-ESPACOS1=""
-ESPACOS2=""
-ESPACOS3=""
-ESPACOS4=""
-ESPACOS5=""
+ESPACOS1="                               "
+ESPACOS2="        "
+ESPACOS3="   "
+ESPACOS4="                "
+ESPACOS5="     "
 ESPACOS6=""
-ESPACOS7=""
-ESPACOS8=""
-ESPACOS9=""
+ESPACOS7=" "
+ESPACOS8="                          "
+ESPACOS9="                       "
 
 
 class CondicaoMotoraS1(HB_Detection):
@@ -33,14 +33,15 @@ class CondicaoMotoraS1(HB_Detection):
     
     def print_instructions(self):
                         
-        print(ESPACOS1,"Instruções\n")
-        print(ESPACOS2,"Este teste possui 4 etapas. Agora você vai realizar a Etapa 1.\n\n")
-        print(ESPACOS3,"Nesta parte do teste  você vai escutar os batimentos de uma gravação de\n") 
-        print(ESPACOS4,"batimentos cardíacos de uma outra pessoa.\n\n")
-        print(ESPACOS5,"Você deve seguir cada batimento apertando a tecla ENTER no teclado.\n\n")
-        print(ESPACOS6,"Não tente antecipar suas respostas adivinhando o ritmo dos batimentos gravados,\n")
-        print(ESPACOS7,"ao invés disso, aperte a tecla ENTER o mais rápido que puder assim que você\n")
-        print(ESPACOS8,"escutar o batimento.\n\n")
+        print("\n\n")
+        print(ESPACOS1,"Instruções:")
+        print(ESPACOS2,"Este teste possui 4 etapas. Agora você vai realizar a Etapa 1.\n")
+        print(ESPACOS3,"Nesta parte do teste  você vai escutar os batimentos de uma gravação de") 
+        print(ESPACOS4,"batimentos cardíacos de uma outra pessoa.\n")
+        print(ESPACOS5,"Você deve seguir cada batimento apertando a tecla ENTER no teclado.\n")
+        print("Não tente antecipar as respostas adivinhando o ritmo dos batimentos gravados,")
+        print(ESPACOS7,"ao invés disso, aperte a tecla ENTER o mais rápido que puder assim que você")
+        print(ESPACOS8,"escutar o batimento.\n")
         print(ESPACOS9,"Para começar pressione ENTER.")
         input()
         #time.sleep(DELAY_SECONDS)
