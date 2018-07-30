@@ -1,0 +1,23 @@
+Participante:;testeJanela;
+Dia:;;
+Hora:;;
+
+Etapa 1: Condição Motora;
+Resposta:;1532986909,169;1532986910,168;
+RT_audio_onset:;3738;4736;
+Acerto:;
+
+Etapa 2: Condição Interoceptiva (Pré);
+Resposta:;1532986916,419;1532986917,439;1532986918,569;1532986919,76;
+RT_pre:;
+Acerto:;
+
+Etapa 3: Condição de Feedback (Estetoscópio);
+Resposta:;1532986923,619;1532986924,444;1532986925,599;1532986926,47;1532986927,479;
+RT_feedback:;
+Acerto:;
+
+Etapa 4: Condição Interoceptiva (Pós);
+Resposta:;1532986931,759;1532986932,729;1532986933,764;1532986934,42;1532986935,259;
+RT_post:;
+Acerto:;

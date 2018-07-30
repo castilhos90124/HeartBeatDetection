@@ -7,10 +7,10 @@ from Data import Data
 import os
 #import time
 
-DURATION_STEP1 = 131
-DURATION_STEP2 = 120
-DURATION_STEP3 = 120
-DURATION_STEP4 = 120
+DURATION_STEP1 = 5     #131
+DURATION_STEP2 = 5     #120
+DURATION_STEP3 = 5     #120
+DURATION_STEP4 = 5     #120
 
    
 def main():
@@ -20,8 +20,9 @@ def main():
     
     while (run_again):
     
+        os.system("CLS")
         
-        name = input("Nome do participante:")
+        name = input("Participante:")
         data = Data(name)
         
         #print(str(1532368217.1612382))
@@ -37,46 +38,53 @@ def main():
         
        
         data.day=input("Dia:")
-        data.hour=input("Horario:")
+        data.hour=input("Hora:")
            
+        os.system("CLS")
         
         #inicio da etapa 1
         step1.print_instructions()
+        os.system("CLS")
+        step1.print_title()
         step1.set_current_start_time()
         step1.play_sound()
-      
         step1.get_responses(DURATION_STEP1)
-     
-              
-        
-        os.system("PAUSE")
+                          
+        step1.print_conclusion()
         os.system("CLS")
        
         #inicio da etapa 2
-        step2.print_instructions_general()
+                
         step2.print_instructions()
+        os.system("CLS")
+        step2.print_title()
         step2.set_current_start_time()
         step2.get_responses(DURATION_STEP2)
-       # print(step2.hb_pressed_times)
-       
-        os.system("pause")
+            
+        step2.print_conclusion()
         os.system("CLS")
        
         #inicio da etapa 3
         step3.print_instructions()
+        os.system("CLS")
+        step3.print_title()
         step3.set_current_start_time()
         step3.get_responses(DURATION_STEP3)
-        #print(step3.hb_pressed_times)
-       
-        os.system("pause")
+               
+        step3.print_conclusion()
         os.system("CLS")
        
         #inicio da etapa 4
         step4.print_instructions()
+        os.system("CLS")
+        step4.print_title()
         step4.set_current_start_time()
+        
         step4.get_responses(DURATION_STEP4)
        # print(step4.hb_pressed_times)
        
+        step4.print_conclusion()
+        os.system("CLS")
         
         data.write_data_csv(step1.hb_pressed_times,step1.hb_play_times,step2.hb_pressed_times,step3.hb_pressed_times,step4.hb_pressed_times)
          
@@ -91,7 +99,7 @@ def main():
             run_again=False
         
    
-   
+  
        
      
 

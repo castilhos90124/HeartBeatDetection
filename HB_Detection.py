@@ -15,7 +15,7 @@ class HB_Detection(object):
         i = 0
         unix_time = 0.0
         
-        print("Pressione Enter quando ouvir um batimento cardíaco\n")
+        print("Respostas:\n")
         
         while self.timeout(duration_seconds) == False:
             input(i)
@@ -53,3 +53,8 @@ class HB_Detection(object):
         
     def set_current_start_time(self):
         self.start_time = time.time()
+        
+    def print_conclusion(self):
+        print("\nEtapa concluida.")
+        input("Pressione Enter para continuar.")
+        

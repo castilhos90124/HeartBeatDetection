@@ -2,6 +2,17 @@ from HB_Detection import HB_Detection
 
 import sys
 
+ESPACOS1=""
+ESPACOS2=""
+ESPACOS3=""
+ESPACOS4=""
+ESPACOS5=""
+ESPACOS6=""
+ESPACOS7=""
+ESPACOS8=""
+ESPACOS9=""
+ESPACOS10=""
+
 class PreInteroceptivaS2(HB_Detection):
     
     hb_pressed_times = []
@@ -15,6 +26,20 @@ class PreInteroceptivaS2(HB_Detection):
          self.hb_play_times = []
     
     def print_instructions(self):
-        #sys.stdin.flush()
-        print("\nEtapa 2: Interoceptive Condition (intero-pre)\n")
-        input("Pressione Enter se voce compreendeu as instrucoes e esta pronto(a) para iniciar a Etapa 2")
+        
+        print(ESPACOS1,"Você vai realizar a Etapa 2 agora\n\n")
+        print(ESPACOS2,"Instruções:\n\n")
+        print(ESPACOS3,"Nesta parte do teste  você vai escutar os batimentos do seu próprio coração\n") 
+        print(ESPACOS4,"apertando a tecla ENTER para cada batimento que você sentir.\n\n")
+        print(ESPACOS5,"Você não deve guiar as respostas sentindo seu pulso em seus punhos ou\n")
+        print(ESPACOS6,"pescoço.\n\n")
+        print(ESPACOS7,"Se você não conseguir sentir a sensação dos seus batimentos, você deve\n")
+        print(ESPACOS8,"apelar para a sua intuição para tentar responder quando você achar que\n")
+        print(ESPACOS9,"houve batimento do seu coração.\n\n")
+        print(ESPACOS10,"Para começar pressione ENTER.")
+        input()
+        
+    
+    def print_title(self):
+        print("Etapa 2")
+        
