@@ -1,0 +1,23 @@
+Participante:;g;
+Dia:;g;
+Hora:;g;
+
+Etapa 1: Condição Motora;
+Resposta:;1533051056,533;1533051056,933;
+RT_audio_onset:;608;1008;
+Acerto:;
+
+Etapa 2: Condição Interoceptiva (Pré);
+Resposta:;1533051067,963;
+RT_pre:;
+Acerto:;
+
+Etapa 3: Condição de Feedback (Estetoscópio);
+Resposta:;1533051080,043;
+RT_feedback:;
+Acerto:;
+
+Etapa 4: Condição Interoceptiva (Pós);
+Resposta:;1533051088,393;
+RT_post:;
+Acerto:;

@@ -1,6 +1,11 @@
 import time
 
 
+ESPACOS1="                             "
+ESPACOS2="                       "
+ESPACOS3="                       "
+
+
 #classe mãe de cada uma das etapas, contém os métodos comuns
 class HB_Detection(object):
         
@@ -58,3 +63,9 @@ class HB_Detection(object):
         print("\nEtapa concluida.")
         input("Pressione Enter para continuar.")
         
+    def print_experiment_end(self):
+        print("\n\n\n\n\n\n")
+        print(ESPACOS1,"FIM DO EXPERIMENTO!\n")
+        print(ESPACOS2,"Obrigada pela sua participação!\n")
+        print(ESPACOS3,"Pressione ENTER para finalizar.") 
+        input()
