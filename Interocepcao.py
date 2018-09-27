@@ -13,7 +13,7 @@ ESPACOS8="    "
 ESPACOS9="                 "
 ESPACOS10="                       "
 
-class PreInteroceptivaS2(HB_Detection):
+class Interocepcao(HB_Detection):
     
     hb_pressed_times = []
     hb_play_times = []
@@ -25,10 +25,10 @@ class PreInteroceptivaS2(HB_Detection):
          self.hb_pressed_times = []
          self.hb_play_times = []
     
-    def print_instructions(self):
+    def print_instructions(self,num_etapa):
         
         print("")
-        print(ESPACOS1,"Você vai realizar a Etapa 4 agora\n")
+        print(ESPACOS1,"Você vai realizar a Etapa "+ num_etapa + " agora\n")
         print(ESPACOS2,"Instruções:\n")
         print(ESPACOS3,"Nesta parte do teste você vai sentir os batimentos do seu próprio coração") 
         print(ESPACOS4,"apertando a tecla ENTER para cada batimento que você sentir.\n")
@@ -41,6 +41,6 @@ class PreInteroceptivaS2(HB_Detection):
         input()
         
     
-    def print_title(self):
-        print("Etapa 4")
+    def print_title(self,num_etapa):
+        print("Etapa "+num_etapa)
         

@@ -12,7 +12,7 @@ ESPACOS9="                 "
 ESPACOS10="                       "
 
 
-class FeedbackS3(HB_Detection):
+class Feedback(HB_Detection):
     
     hb_pressed_times = []
     hb_play_times = []

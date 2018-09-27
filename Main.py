@@ -1,19 +1,19 @@
 from RestingState import RestingState
-from CondicaoMotoraS1 import CondicaoMotoraS1
-from CondicaoMotoraS2 import CondicaoMotoraS2
+from CondicaoMotora import CondicaoMotora
 from Performance import Performance
-from PreInteroceptivaS2 import PreInteroceptivaS2
-from FeedbackS3 import FeedbackS3
-from PosInteroceptivaS4 import PosInteroceptivaS4
+
+from Interocepcao import Interocepcao
+from Feedback import Feedback
+
 from Data import Data
 
 import os
 #import time
 
-DURATION_STEP1 = 5     #131
-DURATION_STEP2 = 5     #120
-DURATION_STEP3 = 5     #120
-DURATION_STEP4 = 5     #120
+DURATION_motora1 = 5     #131
+DURATION_interocepcao1 = 5     #120
+DURATION_feedback = 5     #120
+DURATION_interocepcao2 = 5     #120
 
    
 def main():
@@ -29,14 +29,19 @@ def main():
     #print(round(1532368217.1612382, 3))
     
     #instanciando os objetos das etapas
-    step0 = RestingState()
-    step1 = CondicaoMotoraS1()
-    step12= CondicaoMotoraS2()
+    rest_state = RestingState()
+    motora1 = CondicaoMotora()
+    motora2= CondicaoMotora()
     performance1 = Performance()
     performance2 = Performance()
-    step2 = PreInteroceptivaS2()
-    step3 = FeedbackS3()
-    step4 = PosInteroceptivaS4()
+    performance3 = Performance()
+    performance4 = Performance()
+    interocepcao1 = Interocepcao()
+    interocepcao2 = Interocepcao()
+    interocepcao3 = Interocepcao()
+    interocepcao4 = Interocepcao()
+    feedback = Feedback()
+    
     
     
     
@@ -46,32 +51,32 @@ def main():
        
     os.system("CLS")
     
-    step0.print_instructions()
-    step0.rest()
-    step0.print_conclusion()
+    rest_state.print_instructions()
+    rest_state.rest()
+    rest_state.print_conclusion()
     
     os.system("CLS")
     
-    #inicio da etapa 1
-    step1.print_instructions()
+    #inicio da etapa 2
+    motora1.print_instructions("2")
     os.system("CLS")
-    step1.print_title()
-    step1.set_current_start_time()
-    step1.play_sound()
-    step1.get_responses(DURATION_STEP1)
+    motora1.print_title("2")
+    motora1.set_current_start_time()
+    motora1.play_sound()
+    motora1.get_responses(DURATION_motora1)
                       
-    step1.print_conclusion()
+    motora1.print_conclusion()
     os.system("CLS")
     
-    #inicio da etapa 12
-    step12.print_instructions()
+    #inicio da etapa 3
+    motora2.print_instructions("3")
     os.system("CLS")
-    step12.print_title()
-    step12.set_current_start_time()
-    step12.play_sound()
-    step12.get_responses(DURATION_STEP1)
+    motora2.print_title("3")
+    motora2.set_current_start_time()
+    motora2.play_sound()
+    motora2.get_responses(DURATION_motora1)
                       
-    step12.print_conclusion()
+    motora2.print_conclusion()
     os.system("CLS")
     
     #inicio da pergunta de performance 1
@@ -80,49 +85,75 @@ def main():
     
     os.system("CLS")
    
-    #inicio da etapa 2
+    #inicio da etapa 4
             
-    step2.print_instructions()
+    interocepcao1.print_instructions("4")
     os.system("CLS")
-    step2.print_title()
-    step2.set_current_start_time()
-    step2.get_responses(DURATION_STEP2)
-        
-    step2.print_conclusion()
+    interocepcao1.print_title("4")
+    interocepcao1.set_current_start_time()
+    interocepcao1.get_responses(DURATION_interocepcao1)
+     
+    interocepcao1.print_conclusion()
     os.system("CLS")
    
-     #inicio da etapa 4
-    step4.print_instructions()
+     #inicio da etapa 5
+    interocepcao2.print_instructions("5")
     os.system("CLS")
-    step4.print_title()
-    step4.set_current_start_time()
+    interocepcao2.print_title("5")
+    interocepcao2.set_current_start_time()
     
-    step4.get_responses(DURATION_STEP4)
-   # print(step4.hb_pressed_times)
+    interocepcao2.get_responses(DURATION_interocepcao2)
+   # print(interocepcao2.hb_pressed_times)
+    
    
-    step4.print_conclusion()
+    interocepcao2.print_conclusion()
     os.system("CLS")
     
     #inicio da pergunta de performance 2
     performance2.print_instructions()
     
-    #inicio da etapa 3
-    step3.print_instructions()
     os.system("CLS")
-    step3.print_title()
-    step3.set_current_start_time()
-    step3.get_responses(DURATION_STEP3)
-           
-    step3.print_conclusion()
-    os.system("CLS")
-   
-   
     
-    data.write_data_csv(step1.hb_pressed_times,step1.hb_play_times,step2.hb_pressed_times,step3.hb_pressed_times,step4.hb_pressed_times)
+    #inicio da etapa 6
+    feedback.print_instructions()
+    os.system("CLS")
+    feedback.print_title()
+    feedback.set_current_start_time()
+    feedback.get_responses(DURATION_feedback)
+           
+    feedback.print_conclusion()
+    os.system("CLS")
+   
+     #inicio da pergunta de performance 3
+    performance3.print_instructions()
+   
+    os.system("CLS")
+    
+    #inicio da etapa 7
+    interocepcao3.print_instructions("7")
+    os.system("CLS")
+    interocepcao3.print_title("7")
+    interocepcao3.set_current_start_time()
+    interocepcao3.get_responses(DURATION_interocepcao1)
+     
+    interocepcao3.print_conclusion()
+    os.system("CLS")
+    
+    #inicio da etapa 8
+    interocepcao4.print_instructions("8")
+    os.system("CLS")
+    interocepcao4.print_title("8")
+    interocepcao4.set_current_start_time()
+    interocepcao4.get_responses(DURATION_interocepcao1)
+     
+    interocepcao4.print_conclusion()
+    os.system("CLS")
+    
+    data.write_data_csv(motora1.hb_pressed_times,motora1.hb_play_times,interocepcao1.hb_pressed_times,feedback.hb_pressed_times,interocepcao2.hb_pressed_times)
      
     os.system("CLS")
         
-    step4.print_experiment_end()
+    interocepcao2.print_experiment_end()
           
   
        

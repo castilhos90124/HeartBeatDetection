@@ -17,7 +17,7 @@ ESPACOS8="                          "
 ESPACOS9="                       "
 
 
-class CondicaoMotoraS1(HB_Detection):
+class CondicaoMotora(HB_Detection):
     
     hb_pressed_times = []
     hb_play_times = []
@@ -31,11 +31,11 @@ class CondicaoMotoraS1(HB_Detection):
          
         
     
-    def print_instructions(self):
+    def print_instructions(self,num_etapa):
                         
         print("\n\n")
         print(ESPACOS1,"Instruções:")
-        print(ESPACOS2,"Agora você vai realizar a Etapa 2.\n")
+        print(ESPACOS2,"Agora você vai realizar a Etapa "+ num_etapa + " \n")
         print(ESPACOS3,"Nesta parte do teste  você vai escutar os batimentos de uma gravação de") 
         print(ESPACOS4,"batimentos cardíacos de uma outra pessoa.\n")
         print(ESPACOS5,"Você deve seguir cada batimento apertando a tecla ENTER no teclado.\n")
@@ -49,5 +49,5 @@ class CondicaoMotoraS1(HB_Detection):
     def play_sound(self):
         winsound.PlaySound(SOUND_NAME, winsound.SND_ASYNC)
         
-    def print_title(self):
-        print("Etapa 2")
+    def print_title(self,num_etapa):
+        print("Etapa "+ num_etapa)
