@@ -28,7 +28,7 @@ class PreInteroceptivaS2(HB_Detection):
     def print_instructions(self):
         
         print("")
-        print(ESPACOS1,"Você vai realizar a Etapa 2 agora\n")
+        print(ESPACOS1,"Você vai realizar a Etapa 4 agora\n")
         print(ESPACOS2,"Instruções:\n")
         print(ESPACOS3,"Nesta parte do teste  você vai escutar os batimentos do seu próprio coração") 
         print(ESPACOS4,"apertando a tecla ENTER para cada batimento que você sentir.\n")
@@ -42,5 +42,5 @@ class PreInteroceptivaS2(HB_Detection):
         
     
     def print_title(self):
-        print("Etapa 2")
+        print("Etapa 4")
         
