@@ -10,10 +10,11 @@ from Data import Data
 import os
 import time
 
-DURATION_motora1 = 5     #131
-DURATION_interocepcao1 = 5     #120
-DURATION_feedback = 5     #120
-DURATION_interocepcao2 = 5     #120
+DURATION_motora1 = 131
+DURATION_motora2 = 144
+DURATION_interocepcao1 = 120
+DURATION_feedback = 120
+DURATION_interocepcao2 = 120
 
    
 def main():
@@ -63,7 +64,7 @@ def main():
     os.system("CLS")
     motora1.print_title("2")
     motora1.set_current_start_time()
-    motora1.play_sound()
+    motora1.play_sample()
     motora1.get_responses(DURATION_motora1)
                       
     motora1.print_conclusion()
@@ -75,8 +76,8 @@ def main():
     os.system("CLS")
     motora2.print_title("3")
     motora2.set_current_start_time()
-    motora2.play_sound()
-    motora2.get_responses(DURATION_motora1)
+    motora2.play_tapping()
+    motora2.get_responses(DURATION_motora2)
                       
     motora2.print_conclusion()
     os.system("CLS")

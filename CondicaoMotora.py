@@ -5,9 +5,10 @@ import winsound
 
 DELAY_SECONDS = 1
 SOUND_NAME = "sampleecg"
+SOUND_NAME2 = "tapping_"
 
 ESPACOS1="                               "
-ESPACOS2="        "
+ESPACOS2="                     "
 ESPACOS3="   "
 ESPACOS4="                "
 ESPACOS5="     "
@@ -46,8 +47,11 @@ class CondicaoMotora(HB_Detection):
         input()
         #time.sleep(DELAY_SECONDS)
     
-    def play_sound(self):
+    def play_sample(self):
         winsound.PlaySound(SOUND_NAME, winsound.SND_ASYNC)
+    
+    def play_tapping(self):
+        winsound.PlaySound(SOUND_NAME2, winsound.SND_ASYNC)
         
     def print_title(self,num_etapa):
         print("Etapa "+ num_etapa)

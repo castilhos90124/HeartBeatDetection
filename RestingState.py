@@ -3,13 +3,13 @@ from HB_Detection import HB_Detection
 import time
 
 
-REST_TIME_SECONDS = 5
+REST_TIME_SECONDS = 420 #7min
 
 ESPACOS1="                               "
 ESPACOS2="        "
-ESPACOS3="   "
-ESPACOS4="                "
-ESPACOS5="     "
+ESPACOS3="        "
+ESPACOS4="        "
+ESPACOS5="          "
 ESPACOS6=""
 ESPACOS7=" "
 ESPACOS8="                          "
