@@ -8,7 +8,7 @@ from Feedback import Feedback
 from Data import Data
 
 import os
-#import time
+import time
 
 DURATION_motora1 = 5     #131
 DURATION_interocepcao1 = 5     #120
@@ -48,7 +48,8 @@ def main():
    
     data.day=input("Dia:")
     data.hour=input("Hora:")
-       
+    data.initial_unix.append(time.time())
+    
     os.system("CLS")
     
     rest_state.print_instructions()
@@ -67,6 +68,7 @@ def main():
                       
     motora1.print_conclusion()
     os.system("CLS")
+    
     
     #inicio da etapa 3
     motora2.print_instructions("3")
@@ -149,7 +151,12 @@ def main():
     interocepcao4.print_conclusion()
     os.system("CLS")
     
-    data.write_data_csv(motora1.hb_pressed_times,motora1.hb_play_times,interocepcao1.hb_pressed_times,feedback.hb_pressed_times,interocepcao2.hb_pressed_times)
+    #inicio da pergunta de performance 4
+    performance4.print_instructions()
+   
+    os.system("CLS")
+    
+    data.write_data_csv(motora1.hb_pressed_times,motora2.hb_pressed_times,interocepcao1.hb_pressed_times,interocepcao2.hb_pressed_times,feedback.hb_pressed_times,interocepcao3.hb_pressed_times,interocepcao4.hb_pressed_times,performance1.escolha,performance2.escolha,performance3.escolha,performance4.escolha)
      
     os.system("CLS")
         

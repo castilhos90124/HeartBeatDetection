@@ -15,7 +15,7 @@ ESPACOS9="                       "
 
 class Performance(object):
     
-    escolha = 0
+    escolha = ""
     
     
     
@@ -28,7 +28,8 @@ class Performance(object):
         print(ESPACOS4,"confiança):\n")
         print(ESPACOS5,"1	2	3	4	5	6	7	8	9\n\n")
         print(ESPACOS6)
-        escolha = input("Escolha:")
+        self.escolha=input("Escolha:")
+        
         
         print(ESPACOS9,"Pressione ENTER para iniciar a próxima etapa.")
         input()
