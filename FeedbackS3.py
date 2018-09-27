@@ -27,10 +27,10 @@ class FeedbackS3(HB_Detection):
     def print_instructions(self):
         
         print("")
-        print(ESPACOS1,"Você vai realizar a Etapa 3 agora\n")
+        print(ESPACOS1,"Você vai realizar a Etapa 6 agora\n")
         print(ESPACOS2,"Instruções:\n")
-        print(ESPACOS3,"Nesta parte do teste  você vai escutar os batimentos do seu próprio coração") 
-        print(ESPACOS4,"apertando a tecla ENTER para cada batimento que você sentir.\n")
+        print(ESPACOS3,"Nesta parte do teste  você  deve seguir os batimentos do seu próprio") 
+        print(ESPACOS4,"coração, agora através do estetoscópio, apertando a tecla ENTER para cada\n")
         print(ESPACOS5,"Você não deve guiar as respostas sentindo seu pulso em seus punhos ou")
         print(ESPACOS6,"pescoço.\n")
         print(ESPACOS7,"Se você não conseguir sentir a sensação dos seus batimentos, você deve")
@@ -41,5 +41,5 @@ class FeedbackS3(HB_Detection):
         
     
     def print_title(self):
-        print("Etapa 3")
+        print("Etapa 6")
     

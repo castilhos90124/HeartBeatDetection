@@ -74,8 +74,8 @@ def main():
     step12.print_conclusion()
     os.system("CLS")
     
-    #inicio da pergunta de performance
-    performance.print_instructions()
+    #inicio da pergunta de performance 1
+    performance1.print_instructions()
     
     
     os.system("CLS")
@@ -102,6 +102,9 @@ def main():
    
     step4.print_conclusion()
     os.system("CLS")
+    
+    #inicio da pergunta de performance 2
+    performance2.print_instructions()
     
     #inicio da etapa 3
     step3.print_instructions()

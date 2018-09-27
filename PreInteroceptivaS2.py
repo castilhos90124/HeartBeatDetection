@@ -30,7 +30,7 @@ class PreInteroceptivaS2(HB_Detection):
         print("")
         print(ESPACOS1,"Você vai realizar a Etapa 4 agora\n")
         print(ESPACOS2,"Instruções:\n")
-        print(ESPACOS3,"Nesta parte do teste  você vai escutar os batimentos do seu próprio coração") 
+        print(ESPACOS3,"Nesta parte do teste você vai sentir os batimentos do seu próprio coração") 
         print(ESPACOS4,"apertando a tecla ENTER para cada batimento que você sentir.\n")
         print(ESPACOS5,"Você não deve guiar as respostas sentindo seu pulso em seus punhos ou")
         print(ESPACOS6,"pescoço.\n")
