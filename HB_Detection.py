@@ -3,7 +3,7 @@ import time
 
 ESPACOS1="                             "
 ESPACOS2="                       "
-ESPACOS3="                       "
+ESPACOS3="                          "
 
 
 #classe mãe de cada uma das etapas, contém os métodos comuns
@@ -63,12 +63,40 @@ class HB_Detection(object):
         self.start_time = time.time()
         
     def print_conclusion(self):
-        print("\nEtapa concluida.")
-        input("Pressione Enter para continuar.")
+        print("\nEtapa concluida.\n\n")
+        
         
     def print_experiment_end(self):
         print("\n\n\n\n\n\n")
-        print(ESPACOS1,"FIM DO EXPERIMENTO!\n")
-        print(ESPACOS2,"Obrigada pela sua participação!\n")
-        print(ESPACOS3,"Pressione ENTER para finalizar.") 
+        print(ESPACOS1,"Fim do experimento!\n")
+        print(ESPACOS2,"Muito obrigada pela sua participação!\n")
+        print(ESPACOS3,"Pressione ENTER para sair.") 
         input()
+        
+    def wait_for_audio_start(self):
+        input("Para começar o áudio e para responder a cada batimento aperte ENTER")
+        
+    def wait_for_hb(self): 
+        input("Para começar a responder a cada batimento seu, aperte ENTER")
+        
+        
+    def wait_instructions(self):
+        input("Aguarde o pesquisador abrir a porta e lhe dar instruções")
+        
+    def warn_question(self):
+        input("A próxima tela tem uma pergunta para você, quando estiver pronto, aperte ENTER")
+        
+    def wait_researcher(self):
+        input("Aguarde o pesquisador abrir a porta e retirar o fone")
+        
+    def wait_fone(self):
+        input("Aguarde o pesquisador abrir a porta e ajudar a colocar o fone de ouvido")
+        
+    def wait_estetoscopio(self):
+        input("Aguarde o pesquisador abrir a porta e retirar o estetoscópio")
+        
+    def wait_put_estetoscopio(self):
+        input("Aguarde o pesquisador abrir a porta e colocar o estetoscópio")
+        
+    
+    

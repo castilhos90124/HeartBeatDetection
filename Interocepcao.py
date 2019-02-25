@@ -11,7 +11,7 @@ ESPACOS6="                                 "
 ESPACOS7="    "
 ESPACOS8="    "
 ESPACOS9="                 "
-ESPACOS10="                       "
+ESPACOS10="  "
 
 class Interocepcao(HB_Detection):
     
@@ -37,10 +37,11 @@ class Interocepcao(HB_Detection):
         print(ESPACOS7,"Se você não conseguir sentir a sensação dos seus batimentos, você deve")
         print(ESPACOS8,"apelar para a sua intuição para tentar responder quando você achar que")
         print(ESPACOS9,"houve batimento do seu coração.\n")
-        print(ESPACOS10,"Para começar pressione ENTER.")
+        print(ESPACOS10,"Quando tiver lido a instrução e estiver pronto para seguir, aperte ENTER")
         input()
         
     
     def print_title(self,num_etapa):
         print("Etapa "+num_etapa)
+        print("Etapa iniciada")
         

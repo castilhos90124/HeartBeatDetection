@@ -15,7 +15,7 @@ ESPACOS5="     "
 ESPACOS6=""
 ESPACOS7=" "
 ESPACOS8="                          "
-ESPACOS9="                       "
+ESPACOS9="  "
 
 
 class CondicaoMotora(HB_Detection):
@@ -43,7 +43,7 @@ class CondicaoMotora(HB_Detection):
         print("Não tente antecipar as respostas adivinhando o ritmo dos batimentos gravados,")
         print(ESPACOS7,"ao invés disso, aperte a tecla ENTER o mais rápido que puder assim que você")
         print(ESPACOS8,"escutar o batimento.\n")
-        print(ESPACOS9,"Para começar pressione ENTER.")
+        print(ESPACOS9,"Quando tiver lido a instrução e estiver pronto para seguir, aperte ENTER")
         input()
         #time.sleep(DELAY_SECONDS)
     
@@ -55,3 +55,27 @@ class CondicaoMotora(HB_Detection):
         
     def print_title(self,num_etapa):
         print("Etapa "+ num_etapa)
+        print("Etapa iniciada")
+        
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        

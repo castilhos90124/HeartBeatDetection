@@ -1,4 +1,4 @@
-
+from HB_Detection import HB_Detection
 
 import os
 
@@ -13,7 +13,7 @@ ESPACOS8="                          "
 ESPACOS9="               "
 
 
-class Performance(object):
+class Performance(HB_Detection):
     
     escolha = ""
     
@@ -28,12 +28,15 @@ class Performance(object):
         print(ESPACOS4,"confiança):\n")
         print(ESPACOS5,"1       2       3       4       5       6       7       8       9\n\n")
         print(ESPACOS6)
-        self.escolha=input("Escolha:")
+        print("Confirme sua resposta apertando ENTER\n")
+        self.escolha=input("Resposta:")
         
         
-        print(ESPACOS9,"Pressione ENTER para iniciar a próxima etapa.")
-        input()
+        #print(ESPACOS9,"Pressione ENTER para iniciar a próxima etapa.")
+        #input()
+        
     
+        
    
         
     
